@@ -14,40 +14,30 @@
 print("MENU OPCIONES")
 
 op = int(input("Ingrese una opcion: "))
-while op != 9:
+while op != 7:
 
     if op == 1:
-        print("Ingrese el valor 1: ")
-        op1 = int(input())
-    else: 
-        print("ERROR: debe ingresar la opcion 1")
-
-    if op == 2:
-        print("Ingrese el valor 2: ")
-        op2 = int(input())
-    else:
-        print("ERROR: debe ingresar la opcion 2")
-    
-    if op == 3:
+        op1=float(input("Ingrese el valor 1: "))
+    elif op == 2:
+       op2=float(input("Ingrese el valor 2: "))
+    elif op == 3:
+        op1=float(input("Ingrese el valor 1: "))
+        op2=float(input("Ingrese el valor 2: "))
         suma = op1 + op2
         print(f"SUMA: {suma}")
-    else:
-        print("ERROR: debe ingresar la opcion 3")
-
-    if op == 4:
-        resta = (op1 - op2) * 2
+    elif op == 4:
+        op1=float(input("Ingrese el valor 1: "))
+        op2=float(input("Ingrese el valor 2: "))
+        resta = op1 - op2
         print(f"RESTA: {resta}")
-    else:
-        print("ERROR: debe ingresar la opcion 4")
-
-    if op == 5:
+    elif op == 5:
+        op1=float(input("Ingrese el valor 1: "))
+        op2=float(input("Ingrese el valor 2: "))
         mult = op1 * op2
         print(f"MULTIPLICACION: {mult}")
     else:
-        print("ERROR: debe ingresar la opcion 5")
-
-    if op == 6:
+        op1=float(input("Ingrese el valor 1: "))
+        op2=float(input("Ingrese el valor 2: "))
         div = op1 / op2
         print(f"DIVISION: {div}")
-    else: 
-        print("ERROR: debe ingresar la opcion 6")
+print("*****FIN, GRACIAS *****")
